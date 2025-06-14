@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoolQuest</title>
+
+    <!-- *google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *font awesome from cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- *ionicons for menu  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+
+    <!-- *tailwind output css  -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- *own javascript file  -->
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body class="font-[inter]">
+    <!-- *header section start -->
+    <header class="max-w-full min-w-[640px] wrapper sticky top-0 left-0 main-nav z-30">
+      <div class="max-w-[1140px] mx-auto py-6">
+        <nav class="bg-white rounded-[35px] w-full flex justify-between items-center shadow-2xl">
+          <figure class="ml-7">
+            <a href="index.html"><img src="media/logo.png" alt="" class="img-fluid" /></a>
+          </figure>
+
+          <div
+            class="lg:static absolute bg-green-950/70 backdrop-blur-sm lg:bg-white w-full lg:w-auto left-0 top-[-800px] flex justify-center menu-links duration-300"
+          >
+            <ul
+              class="flex justify-center items-center gap-1 lg:gap-5 fnt-18 lg:flex-row flex-col text-white lg:text-fnt-primary w-full lg:w-auto p-[50px_0px_80px_0px] lg:p-[0px]"
+            >
+              <li class="w-full lg:w-auto text-center">
+                <a class="block w-full hover:bg-white hover:text-fnt-primary hover:scale-105 duration-500 py-5" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="w-full lg:w-auto text-center">
+                <a class="block w-full hover:bg-white hover:text-fnt-primary hover:scale-105 duration-400 py-5" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="w-full lg:w-auto text-center">
+                <a class="block w-full hover:bg-white hover:text-fnt-primary hover:scale-105 duration-400 py-5" href="#"
+                  >Past Work</a
+                >
+              </li>
+              <li class="w-full lg:w-auto text-center">
+                <a class="block w-full hover:bg-white hover:text-fnt-primary hover:scale-105 duration-400 py-5" href="#"
+                  >Reviews</a
+                >
+              </li>
+              <li class="w-[40%] lg:w-0">
+                <button
+                  class="lg:hidden bg-white text-fnt-primary w-full py-3 mt-7 rounded-[35px] hover:scale-105 duration-400 cursor-pointer"
+                >
+                  Get Free Quotes
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center">
+            <button
+              class="bg-bg-primary text-white fnt-18 rounded-[28px] btn-nav-gfq mr-3 my-[7px] w-fit justify-self-end cursor-pointer hover:scale-105 duration-400"
+            >
+              Get Free Quotes
+            </button>
+            <ion-icon onclick="toggleMenu(this)" name="menu" class="text-5xl lg:hidden mr-7 cursor-pointer"></ion-icon>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- #header section end -->
+
+    <!-- *hero section start  -->
+    <section class="max-w-full min-w-[640px] wrapper bg-hero mt-[-130px]">
+      <div class="max-w-[1140px] mx-auto pt-38 lg:pt-52">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-36 lg:gap-3 px-0 md:px-20 lg:px-0">
+          <!-- hero left -->
+          <div class="lg:col-span-2 lg:mb-20 flex flex-col">
+            <h1 class="fnt-64 text-white">Reliable HVAC for Every Season</h1>
+            <ul class="fnt-16 text-white font-light flex flex-col gap-2.5 mt-5 mb-10">
+              <li class="flex gap-2">
+                <img src="./media/hero/alarm-clock-1.png" alt="" />
+                Certified & Experienced Technicians
+              </li>
+              <li class="flex gap-2">
+                <img src="./media/hero/alarm-clock-2.png" alt="" />
+                Fast, Reliable Service
+              </li>
+              <li class="flex gap-2">
+                <img src="./media/hero/hot-price.png" alt="" />
+                Transparent, Affordable Pricing
+              </li>
+            </ul>
+            <form action="" class="bg-white p-2 grid grid-cols-2 gap-2.5 max-w-[390px] rounded-lg">
+              <input type="text" placeholder="Name" class="border-1 py-2 px-3 text-fnt-secondary rounded-md" />
+              <input type="number" placeholder="Phone" class="border-1 py-2.5 px-3 text-fnt-secondary rounded-md" />
+              <select class="border-1 py-2 px-3 text-fnt-secondary rounded-md">
+                <option>Service</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+              </select>
+              <input
+                type="button"
+                value="Submit"
+                class="border-1 py-2 px-3 rounded-md fnt-18 text-white bg-bg-primary cursor-pointer"
+              />
+            </form>
+            <div class="mt-10">
+              <p class="mb-1 text-white">Certified Installer</p>
+              <img src="media/hero/logos.png" alt="" />
+            </div>
+          </div>
+
+          <!-- hero right -->
+          <div class="lg:col-span-3 lg:justify-self-end self-end mb-20">
+            <div class="max-w-[550px] flex flex-col gap-2">
+              <div class="relative min-w-fit">
+                <!-- white background -->
+                <div class="grid grid-cols-2">
+                  <div class="h-[310px] bg-white rounded-tl-[100%]"></div>
+                  <div class="bg-white"></div>
+                </div>
+
+                <!-- model and warranty  -->
+                <img src="media/hero/hero model.png" alt="" class="absolute bottom-[18px] scale-110" />
+                <img src="media/hero/warranty.png" alt="" class="absolute top-[-18%] left-[-9%]" />
+
+                <!-- google rating -->
+                <div
+                  class="bg-white w-fit px-6 rounded-[8px] absolute bottom-[19px] left-[27px] border-4 border-[#F4F4F4]"
+                >
+                  <img src="media/google.png" class="pt-2 mx-auto" />
+                  <p class="">4.8 (698)</p>
+                </div>
+                <!-- shield sec  -->
+                <div
+                  class="bg-white w-fit px-6 rounded-[8px] absolute border-4 border-[#F4F4F4] top-[23px] right-[30px]"
+                >
+                  <img src="media/hero/shield-02.png" alt="" class="mx-auto" />
+                  <p>C20-987654</p>
+                </div>
+              </div>
+
+              <!-- right bottom  -->
+              <div class="flex gap-2">
+                <div class="relative">
+                  <img src="media/hero/past_work_one.png" alt="" />
+                  <button
+                    class="text-white bg-bg-primary absolute bottom-0 right-0 py-2 px-3 rounded-tl-xl cursor-pointer"
+                  >
+                    View Details
+                  </button>
+                </div>
+                <div class="relative">
+                  <img src="media/hero/past_work_two.png" alt="" />
+                  <button
+                    class="text-white bg-bg-primary absolute bottom-0 right-0 py-2 px-3 rounded-tl-xl rounded-br-lg cursor-pointer"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #hero section end -->
+
+    <!-- *reviews section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto pt-20 pb-[50px] flex flex-col items-center">
+        <h2 class="fnt-40 font-medium text-fnt-primary">Trusted by Families Like Yours</h2>
+
+        <!-- reviews  -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10 mb-8 px-20 sm:px-0 justify-center">
+          <!-- review  -->
+          <div
+            class="flex flex-col gap-5 items-center py-[22px] px-14 shadow-lg rounded-[50px] hover:bg-bg-primary duration-500 group"
+          >
+            <div class="flex flex-col items-center">
+              <img src="media/reviews/1.png" alt="" />
+              <h6 class="text-fnt-primary group-hover:text-white">Mason Carter</h6>
+              <div>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+
+            <p class="fnt-14 text-fnt-secondary text-center group-hover:text-white">
+              “Super professional service, quick installation, and everything works perfectly. Highly recommend!”
+            </p>
+
+            <div class="flex flex-col items-center">
+              <img src="media/google.png" alt="" />
+              <p class="fnt-14 text-fnt-primary font-medium group-hover:text-white">Reviewed on Google</p>
+            </div>
+          </div>
+
+          <!-- review  -->
+          <div
+            class="flex flex-col gap-5 items-center py-[22px] px-14 shadow-lg rounded-[50px] hover:bg-bg-primary duration-500 group"
+          >
+            <div class="flex flex-col items-center">
+              <img src="media/reviews/2.png" alt="" />
+              <h6 class="text-fnt-primary group-hover:text-white">Chloe Anderson</h6>
+              <div>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+
+            <p class="fnt-14 text-fnt-secondary text-center group-hover:text-white">
+              “Very happy with their work! The team was efficient and the new system runs great.”
+            </p>
+
+            <div class="flex flex-col items-center">
+              <img src="media/google.png" alt="" />
+              <p class="fnt-14 text-fnt-primary font-medium group-hover:text-white">Reviewed on Google</p>
+            </div>
+          </div>
+
+          <!-- review  -->
+          <div
+            class="flex flex-col gap-5 items-center py-[22px] px-14 shadow-lg rounded-[50px] hover:bg-bg-primary duration-500 group sm:col-span-2 lg:col-span-1 justify-self-center w-fit"
+          >
+            <div class="flex flex-col items-center">
+              <img src="media/reviews/3.png" alt="" />
+              <h6 class="text-fnt-primary group-hover:text-white">Skylar Bennett</h6>
+              <div>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+
+            <p class="fnt-14 text-fnt-secondary text-center group-hover:text-white">
+              “Great experience from start to finish. Honest pricing and top-notch service!”
+            </p>
+
+            <div class="flex flex-col items-center">
+              <img src="media/google.png" alt="" />
+              <p class="fnt-14 text-fnt-primary font-medium group-hover:text-white">Reviewed on Google</p>
+            </div>
+          </div>
+        </div>
+        <!-- button  -->
+        <button class="bg-bg-primary text-white btn-general w-fit cursor-pointer">View more</button>
+      </div>
+    </section>
+    <!-- #reviews section end  -->
+
+    <!-- *certification section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto flex flex-col items-center gap-10 py-[50px]">
+        <h2 class="fnt-40 font-medium text-fnt-primary">Your Trusted HVAC Experts</h2>
+
+        <!-- 1st row  -->
+        <div class="flex gap-10">
+          <div class="flex flex-col items-center">
+            <img src="media/certification/1.png" alt="" />
+            <p class="text-fnt-primary">ISO 9001 Certified</p>
+            <p class="text-fnt-secondary">Quality Management for HVAC Excellence</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="media/certification/2.png" alt="" />
+            <p class="text-fnt-primary">ISO 14001 Certification</p>
+            <p class="text-fnt-secondary">Eco-Friendly HVAC Solutions</p>
+          </div>
+        </div>
+
+        <!-- 2nd row  -->
+        <div class="flex gap-32">
+          <div class="flex flex-col items-center">
+            <img src="media/certification/3.png" alt="" />
+            <p class="text-fnt-primary">EPA Certified</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-between">
+            <img src="media/certification/4.png" alt="" class="pt-4" />
+            <p class="text-fnt-primary">BBB Accredited</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="media/certification/5.png" alt="" />
+            <p class="text-fnt-primary">NATE Certified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #certification section end  -->
+
+    <!-- *benefits section start -->
+    <section class="max-w-full min-w-[640px] wrapper bg-[#ebfff1]">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col gap-10 items-center">
+        <h2 class="fnt-40 font-medium">The Benefits of Choosing Us</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div
+            class="flex flex-col items-center bg-white p-8 rounded-bl-4xl rounded-tr-4xl shadow-2xl hover:scale-105 duration-300"
+          >
+            <img src="media/benefits/1.png" alt="" />
+            <h4 class="fnt-24 text-fnt-primary text-center">24/7 Emergency Services</h4>
+            <p class="fnt-14 text-fnt-secondary text-center px-[20%]">
+              Fast and reliable emergency HVAC services available 24/7.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center bg-white p-8 rounded-bl-4xl rounded-tr-4xl shadow-2xl hover:scale-105 duration-300"
+          >
+            <img src="media/benefits/2.png" alt="" />
+            <h4 class="fnt-24 text-fnt-primary text-center">24/7 Emergency Services</h4>
+            <p class="fnt-14 text-fnt-secondary text-center px-[20%]">
+              Fast and reliable emergency HVAC services available 24/7.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center bg-white p-8 rounded-bl-4xl rounded-tr-4xl shadow-2xl hover:scale-105 duration-300"
+          >
+            <img src="media/benefits/3.png" alt="" />
+            <h4 class="fnt-24 text-fnt-primary text-center">24/7 Emergency Services</h4>
+            <p class="fnt-14 text-fnt-secondary text-center px-[20%]">
+              Fast and reliable emergency HVAC services available 24/7.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #benefits section end -->
+
+    <!-- *past work section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto">
+        <div class="grid lg:grid-cols-2 gap-[30px] py-[50px]">
+          <!-- item  -->
+          <div class="">
+            <h3 class="fnt-40 font-medium text-fnt-primary leading-12">Past Work That Speaks for Itself</h3>
+            <p class="text-fnt-secondary py-10">
+              Explore some of the outstanding HVAC projects we’ve proudly completed. Every image reflects our unwavering
+              commitment to quality, reliability, and expert craftsmanship — from flawless installations to seamless
+              maintenance. These are just a few examples of the exceptional results we deliver for homeowners like you.
+            </p>
+            <button class="text-white bg-bg-primary btn-general cursor-pointer">Explore Our Work</button>
+          </div>
+
+          <!-- item  -->
+          <div class="p-[37px_22px_19px_23px] bg-bg-primary rounded-2xl text-white shadow-2xl">
+            <h3 class="fnt-24">Efficient Home Heating Upgrade</h3>
+            <p class="fnt-14 mb-5 font-extralight">
+              Installed a high-efficiency furnace system, reducing energy costs and improving comfort for the
+              homeowners.
+            </p>
+            <img src="media/pastWork/1.png" alt="" />
+          </div>
+
+          <!-- item  -->
+          <div class="p-[37px_22px_19px_23px] bg-bg-primary rounded-2xl text-white shadow-2xl">
+            <h3 class="fnt-24">Complete HVAC System Installation</h3>
+            <p class="fnt-14 mb-5 font-extralight">
+              Designed and installed a full heating and cooling solution for a newly built modern home.
+            </p>
+            <img src="media/pastWork/2.png" alt="" />
+          </div>
+
+          <!-- item  -->
+          <div class="p-[37px_22px_19px_23px] bg-bg-primary rounded-2xl text-white shadow-2xl">
+            <h3 class="fnt-24">Emergency AC Repair & Restoration</h3>
+            <p class="fnt-14 mb-5 font-extralight">
+              Rapid response service that restored cooling during peak summer heat, ensuring family comfort and safety.
+            </p>
+            <img src="media/pastWork/3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #past work section end  -->
+
+    <!-- *offer section start -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col items-center gap-10">
+        <h3 class="fnt-40 text-fnt-primary font-medium">Save Big on Your Next HVAC Project</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[65%_auto] gap-8">
+          <div class="rounded-[32px] bg-[url('./media/offer/1.jpg')] bg-cover bg-center">
+            <!-- <img src="media/offer/1.jpg" alt="" /> -->
+            <div
+              class="text-white bg-green-800/40 w-full h-full flex flex-col gap-5 justify-end pl-7 pb-4 items-start rounded-[32px] lg:pt-0 pt-48"
+            >
+              <button class="fnt-16 btn-general bg-white text-bg-primary cursor-pointer">Hot Offer</button>
+              <h4 class="fnt-24">Get $500 OFF New HVAC System Installation!</h4>
+              <p class="fnt-14">
+                Upgrade your comfort and save big! Get an instant $500 OFF when you install a brand-new,
+                energy-efficient HVAC system — limited time only!
+              </p>
+            </div>
+          </div>
+
+          <div class="justify-self-center">
+            <img src="media/offer/2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #offer section end -->
+
+    <!-- *features section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col items-center gap-[60px]">
+        <h2 class="fnt-40 text-fnt-primary font-medium">How We Bring Comfort to Your Home</h2>
+        <!-- items  -->
+        <div class="grid grid-cols-2 xl:grid-cols-4 gap-[40px_30px]">
+          <!-- item  -->
+          <div class="flex flex-col justify-end relative">
+            <img src="media/features/1.png" alt="" class="scale-110" />
+            <div class="absolute bottom-0 z-10">
+              <img src="media/features/i1.png" class="pl-[18px] pb-[5px] max-w-[72px] cursor-pointer" />
+              <div class="p-[15px_18px_16px_18px] bg-[#ebfff1] w-full rounded-br-2xl rounded-bl-2xl">
+                <h6 class="fnt-16 text-fnt-primary mb-1">Schedule a Consultation</h6>
+                <p class="fnt-14 text-fnt-secondary">
+                  Contact us to book your free consultation with our HVAC experts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item  -->
+          <div class="flex flex-col justify-end relative">
+            <img src="media/features/2.png" alt="" class="scale-110" />
+            <div class="absolute bottom-0 z-10">
+              <img src="media/features/i2.png" class="pl-[18px] pb-[5px] max-w-[72px] cursor-pointer" />
+              <div class="p-[15px_18px_16px_18px] bg-[#ebfff1] w-full rounded-br-2xl rounded-bl-2xl">
+                <h6 class="fnt-16 text-fnt-primary mb-1">Get a Custom Quote</h6>
+                <p class="fnt-14 text-fnt-secondary">We assess your needs and provide a clear, no-obligation quote.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item  -->
+          <div class="flex flex-col justify-end relative">
+            <img src="media/features/3.png" alt="" class="scale-110" />
+            <div class="absolute bottom-0 z-10">
+              <img src="media/features/i3.png" class="pl-[18px] pb-[5px] max-w-[72px] cursor-pointer" />
+              <div class="p-[15px_18px_16px_18px] bg-[#ebfff1] w-full rounded-br-2xl rounded-bl-2xl">
+                <h6 class="fnt-16 text-fnt-primary mb-1">Professional Installation</h6>
+                <p class="fnt-14 text-fnt-secondary">
+                  Our certified team installs your system with precision and more care.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item  -->
+          <div class="flex flex-col justify-end relative">
+            <img src="media/features/4.png" alt="" class="scale-110" />
+            <div class="absolute bottom-0 z-10">
+              <img src="media/features/i4.png" class="pl-[18px] pb-[5px] max-w-[72px] cursor-pointer" />
+              <div class="p-[15px_18px_16px_18px] bg-[#ebfff1] w-full rounded-br-2xl rounded-bl-2xl">
+                <h6 class="fnt-16 text-fnt-primary mb-1">Enjoy Total Comfort</h6>
+                <p class="fnt-14 text-fnt-secondary">
+                  Experience efficient heating and cooling all year round you can trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #features section end  -->
+
+    <!-- *services section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col items-center gap-12">
+        <h2 class="fnt-40 text-fnt-primary">Our HVAC Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <!-- item  -->
+          <div class="flex flex-col gap-3">
+            <img src="media/services/1.png" alt="" />
+            <h3 class="fnt-24 text-fnt-primary font-medium">Air Conditioner Installation</h3>
+            <p class="fnt-14 text-fnt-secondary">
+              Stay cool all summer with fast, professional AC installations built to last.
+            </p>
+            <button class="bg-bg-primary text-white btn-general w-fit cursor-pointer">Explore Service</button>
+          </div>
+
+          <!-- item  -->
+          <div class="flex flex-col gap-3">
+            <img src="media/services/2.png" alt="" />
+            <h3 class="fnt-24 text-fnt-primary font-medium">Heating System Repair</h3>
+            <p class="fnt-14 text-fnt-secondary">
+              Keep your home warm and safe with expert repair services for any heating system.
+            </p>
+            <button class="bg-bg-primary text-white btn-general w-fit cursor-pointer">Explore Service</button>
+          </div>
+
+          <!-- item  -->
+          <div class="flex flex-col gap-3">
+            <img src="media/services/3.png" alt="" />
+            <h3 class="fnt-24 text-fnt-primary font-medium">Indoor Air Quality Solutions</h3>
+            <p class="fnt-14 text-fnt-secondary">
+              Breathe cleaner, healthier air with advanced filtration and ventilation systems.
+            </p>
+            <button class="bg-bg-primary text-white btn-general w-fit cursor-pointer">Explore Service</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #services section end  -->
+
+    <!-- *leaders section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col gap-10 items-center">
+        <h2 class="fnt-40 text-fnt-primary font-medium">Meet the People Behind the Work</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] items-center">
+          <img src="media/leaders/1.png" alt="" class="rounded-lg mx-auto" />
+
+          <!-- right side  -->
+          <div class="grid grid-cols-2 items-center gap-8">
+            <!-- item 1  -->
+            <div class="border-2 border-bg-primary px-3 py-[58px] h-full">
+              <p class="fnt-14 text-fnt-secondary">
+                “My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every
+                day.”
+              </p>
+              <div class="pt-8">
+                <h5 class="fnt-24 text-bg-primary font">James Carter</h5>
+                <p class="fnt-14 text-fnt-secondary">Founder & Senior HVAC Specialist</p>
+              </div>
+            </div>
+            <!-- item 2  -->
+            <div class="border-2 border-bg-primary px-3 py-[58px] h-full">
+              <p class="fnt-14 text-fnt-secondary">
+                “I’m here to ensure every project runs smoothly and every customer feels heard, respected, and happy
+                with our work.”
+              </p>
+              <div class="pt-8">
+                <h5 class="fnt-24 text-bg-primary font">Michael Torres</h5>
+                <p class="fnt-14 text-fnt-secondary">Operations Manager & Customer Care Lead</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #leaders section end  -->
+
+    <!-- *insights section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col items-center gap-10">
+        <h2 class="fnt-40 font-medium text-bg-primary">HVAC Insights</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <!-- item 1  -->
+          <div class="rounded-[20px] shadow-2xl">
+            <img src="media/insights/1.png" alt="" class="w-full" />
+            <div class="p-[24px_12px_16px]">
+              <p class="fnt-14 text-fnt-secondary">25 Apr 2025</p>
+              <h6 class="fnt-24 text-fnt-primary mt-3">5 Signs Your AC Needs Maintenance</h6>
+            </div>
+            <hr />
+            <button class="fnt-18 text-fnt-primary py-1 m-[26px_12px_12px] cursor-pointer">Read More</button>
+          </div>
+
+          <!-- item 2 -->
+          <div class="rounded-[20px] shadow-2xl">
+            <img src="media/insights/2.png" alt="" class="w-full" />
+            <div class="p-[24px_12px_16px]">
+              <p class="fnt-14 text-fnt-secondary">22 Apr 2025</p>
+              <h6 class="fnt-24 text-fnt-primary mt-3">How to Save on Heating Bills This Winter</h6>
+            </div>
+            <hr />
+            <button class="fnt-18 text-fnt-primary py-1 m-[26px_12px_12px] cursor-pointer">Read More</button>
+          </div>
+
+          <!-- item 3 -->
+          <div class="rounded-[20px] shadow-2xl">
+            <img src="media/insights/3.png" alt="" class="w-full" />
+            <div class="p-[24px_12px_16px]">
+              <p class="fnt-14 text-fnt-secondary">22 Apr 2025</p>
+              <h6 class="fnt-24 text-fnt-primary mt-3">The Best Thermostat Settings for Comfort & Efficiency</h6>
+            </div>
+            <hr />
+            <button class="fnt-18 text-fnt-primary py-1 m-[26px_12px_12px] cursor-pointer">Read More</button>
+          </div>
+        </div>
+        <button class="text-white bg-bg-primary btn-general cursor-pointer">Explore All Articles</button>
+      </div>
+    </section>
+    <!-- #insights section end -->
+
+    <!-- *serve areas section start  -->
+    <section class="max-w-full min-w-[640px] wrapper">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col gap-10 items-center">
+        <h2 class="fnt-40 text-fnt-primary font-medium">Areas We Serve</h2>
+        <div class="flex-container">
+          <!-- location 1-->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Los Angeles</p>
+          </div>
+          <!-- location2 -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>San Diego</p>
+          </div>
+          <!-- location 3-->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>San Jose</p>
+          </div>
+          <!-- location 4-->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>San Francisco</p>
+          </div>
+          <!-- location 5-->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Sacramento</p>
+          </div>
+          <!-- location 6-->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Phoenix</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Las Vegas</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Denver</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Kansas City</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Charlotte</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>San Antonio</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Atlanta</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Jacksonville</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Indianapolis</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Raleigh</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Chicago</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Tampa</p>
+          </div>
+          <!-- location -->
+          <div
+            class="flex gap-1 py-3 px-6 text-bg-primary border-1 border-bg-primary rounded-[24px] w-fit cursor-pointer"
+          >
+            <img src="media/location.png" alt="" />
+            <p>Orlando</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #serve areas section end -->
+
+    <!-- *footer section start  -->
+    <section class="max-w-full min-w-[640px] wrapper bg-bg-primary">
+      <div class="max-w-[1140px] mx-auto py-[50px] flex flex-col gap-12">
+        <!-- header top  -->
+        <div class="flex lg:justify-between flex-wrap justify-center items-center gap-4 py-5 px-9 bg-white rounded-xl">
+          <p class="fnt-24 text-bg-primary text-center">Let us help you choose the perfect system for your home.</p>
+          <button class="text-white bg-bg-primary btn-general cursor-pointer hover:scale-105 duration-300">
+            Free HVAC Estimate
+          </button>
+        </div>
+
+        <!-- header middle -->
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- middle left  -->
+          <div class="flex flex-col gap-6 max-w-[334px]">
+            <h3 class="text-white fnt-40 leading-10">CoolQuest</h3>
+            <p class="text-white fnt-14 font-light">
+              Trusted local HVAC experts delivering reliable heating and cooling solutions.
+            </p>
+            <div class="flex gap-5">
+              <i class="fa-brands fa-facebook text-[32px]" style="color: #ffffff"></i>
+              <i class="fa-brands fa-twitter text-[32px]" style="color: #ffffff"></i>
+              <i class="fa-brands fa-linkedin text-[32px]" style="color: #ffffff"></i>
+            </div>
+          </div>
+
+          <!-- middle right  -->
+          <div class="grid grid-cols-2 lg:mt-0 mt-10">
+            <div>
+              <h6 class="text-white fnt-24 font-medium mb-4">Quick links</h6>
+              <ul class="flex flex-col gap-3 text-white">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-6">
+              <div class="flex gap-2">
+                <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+                <p class="text-white fnt-16">(555) 123-4567</p>
+              </div>
+              <div class="flex gap-2">
+                <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+                <p class="text-white fnt-16">mail.coolquest.com</p>
+              </div>
+              <div class="flex gap-2">
+                <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+                <p class="text-white fnt-16">1234 Maplewood Drive, Houston, TX 77002, United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-white" />
+        <!-- header bottom  -->
+        <div><p class="text-white font-light text-center">&copy; 2025 all rights resereved</p></div>
+      </div>
+    </section>
+    <!-- #footer section end -->
+
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+    <!-- *script for navbar -->
+    <script>
+      function toggleMenu(e) {
+        const menuLinks = document.querySelector(".menu-links");
+        e.name = e.name === "menu" ? "close" : "menu";
+        menuLinks.classList.toggle("top-[92px]");
+      }
+    </script>
+  </body>
+</html>

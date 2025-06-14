@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOXNEWS</title>
+    <!-- *font awesome from cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- *bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <!-- *bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- *own site's css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- *own site's javascript -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!--*navbar start-->
+    <section class="container-fluid navbar-container">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom py-3">
+          <div class="d-flex align-items-center">
+            <button
+              class="btn me-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebar"
+              aria-controls="sidebar"
+            >
+              <img src="media/bars.png" alt="" />
+            </button>
+            <div class="search-box d-none d-md-block">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="form-control form-control-sm" placeholder=" Search countries" />
+            </div>
+          </div>
+          <div class="navbar-logo">
+            <img src="media/company-logo.svg" alt="" />
+          </div>
+          <div class="d-none d-md-flex align-items-center ms-auto">
+            <button class="btn btn-sm me-2">
+              Cart <span class="cart-counter"><p>0</p></span>
+            </button>
+            <button class="btn btn-dark btn-sm">Subscribe</button>
+          </div>
+        </nav>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav flex-column mb-3">
+              <li class="nav-item"><a href="#" class="nav-link text-white">Entertainment</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Sports</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Politics</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Business</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Technology</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Health</a></li>
+            </ul>
+            <input type="text" class="form-control mb-3" placeholder="Search..." />
+            <div class="d-flex flex-column gap-2 d-md-none">
+              <button class="btn btn-outline-light btn-sm">Cart</button>
+              <button class="btn btn-warning btn-sm">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#navbar end-->
+
+    <!--*nav menu start-->
+    <section class="container-fluid navmenu-container">
+      <div class="container">
+        <div class="nav-category text-center">
+          <a href="#" class="active">Entertainment</a>
+          <a href="#">Sports</a>
+          <a href="#">Politics</a>
+          <a href="#">Business</a>
+          <a href="#">Technology</a>
+          <a href="#">Health</a>
+        </div>
+      </div>
+    </section>
+    <!--#nav menu end-->
+
+    <!--*hero section start-->
+    <section class="container-fluid my-5">
+      <div class="container">
+        <div class="row">
+          <!--main part-->
+          <div class="col-lg-8 hero-main">
+            <img src="media/hero/banner.jpg" width="100%" class="img-fluid" alt="" />
+            <h1 class="fs-1 my-4">Global Climate Summit Yields Mixed Results on Key Agreements</h1>
+
+            <div class="row">
+              <div class="col-md-7">
+                <p class="fs-6">
+                  The global stock market has reached unprecedented levels, buoyed by optimistic economic forecasts and
+                  strong corporate earnings.
+                </p>
+              </div>
+              <div class="col-md-5 mt-3 mt-md-0 d-flex align-items-center hero-author">
+                <img src="media/hero/profile.jpg" class="img-fluid me-2 ms-3" alt="" />
+                <div>
+                  <h5>Michael Brown</h5>
+                  <p>December 16, 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--hero side item-->
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="row hero-side-item pb-3">
+              <div class="col-6">
+                <img src="media/hero/1.jpg" width="100%" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+                <p>Technology | <i class="fa-regular fa-clock"></i> Min</p>
+              </div>
+            </div>
+
+            <div class="row hero-side-item pb-3 pt-3">
+              <div class="col-6">
+                <img src="media/hero/2.jpg" width="100%" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+                <p>Technology | <i class="fa-regular fa-clock"></i> Min</p>
+              </div>
+            </div>
+
+            <div class="row hero-side-item pb-3 pt-3">
+              <div class="col-6">
+                <img src="media/hero/3.jpg" width="100%" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+                <p>Technology | <i class="fa-regular fa-clock"></i> Min</p>
+              </div>
+            </div>
+
+            <div class="row hero-side-item pb-3 pt-3">
+              <div class="col-6">
+                <img src="media/hero/4.jpg" width="100%" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+                <p>Technology | <i class="fa-regular fa-clock"></i> Min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#hero section end-->
+
+    <!-- *latest news start-->
+    <section class="container-fluid py-5 my-5">
+      <div class="container">
+        <!-- post navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-2">Latest News</h2>
+          <p class="text-danger">View All <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+
+        <!-- latest news posts-->
+        <div class="row">
+          <!-- left column -->
+          <div class="col-lg-6">
+            <img src="media/latest-news/1.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="text-muted my-3">Politics &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 8 Min</p>
+            <h3 class="fs-3">Global Summit 2024: Leaders Address Climate, Trade and Security Challenges</h3>
+          </div>
+
+          <!-- right column  -->
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="row row-cols-lg-2 row-cols-1 g-4">
+              <div class="col">
+                <div class="pb-3 latest-news-post">
+                  <img src="media/latest-news/2.jpg" width="100%" class="img-fluid" alt="" />
+                  <p class="text-muted my-2">Technology &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min</p>
+                  <h5 class="fs-5 fw-light">Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h5>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="pb-3 latest-news-post">
+                  <img src="media/latest-news/3.jpg" width="100%" class="img-fluid" alt="" />
+                  <p class="text-muted my-2">Technology &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 9 Min</p>
+                  <h5 class="fs-5 fw-light">Exploring The Future of Space: Exploring Beyond Mars Environment</h5>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="pb-3 latest-news-post">
+                  <img src="media/latest-news/4.jpg" width="100%" class="img-fluid" alt="" />
+                  <p class="text-muted my-2">Health &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min</p>
+                  <h5 class="fs-5 fw-light">The Role of Fitness in Chronic Sisease Management</h5>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="pb-3 latest-news-post">
+                  <img src="media/latest-news/5.jpg" width="100%" class="img-fluid" alt="" />
+                  <p class="text-muted my-2">Technology &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 6 Min</p>
+                  <h5 class="fs-5 fw-light">The Science of Sleep: How to Rest Better in a 24/7 World</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #latest news end-->
+
+    <!--*ad section start-->
+    <section class="container-fluid ad-main-container">
+      <!-- section backgroung -->
+      <p class="background-text">* LATEST * LATEST * LATEST * LATEST * LATEST * LATEST *</p>
+
+      <div class="container ad-middle-container">
+        <div class="row">
+          <!-- left side column-->
+          <div class="col-lg-4 col-sm-10 d-flex flex-column justify-content-end">
+            <h4 class="fs-4 border-bottom border-white pb-4 text-white fw-light">
+              Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+            </h4>
+            <p class="mt-3 text-white fw-lighter">
+              Smart city initiatives are leveraging AI, IoT, and data analytics to create sustainable spaces.
+            </p>
+            <div class="d-flex align-items-center text-white">
+              <img src="media/ad/profile.png" alt="" class="me-3" style="border-radius: 50%" />
+              <div>
+                <h6>By Ethan Collins</h6>
+                <p style="font-size: 14px; font-weight: 200; margin: 0">Published Jan 11, 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side column  -->
+          <div class="col-lg-8 mt-4 mt-lg-0">
+            <img src="media/ad/banner.jpg" width="100%" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#ad section end-->
+
+    <!--*editors pick start-->
+    <section class="container-fluid py-5 my-5">
+      <div class="container">
+        <h2 class="fs-1 mb-4">Editors Pick</h2>
+
+        <!-- top row  -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="fs-2">5G Expainsion: What It Means for Consumers and Businesses</h3>
+            <hr />
+            <p class="text-secondary">From faster downloads to smarter cities, 5G is reshaping global connectivity.</p>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="media/editors-pick/1.jpg" width="100%" class="img-fluid" alt="" />
+          </div>
+        </div>
+
+        <!-- bottom row  -->
+        <div class="row row-cols-lg-3 row-cols-1 mt-lg-4 mt-5">
+          <div class="col mt-4 mt-lg-0">
+            <img src="media/editors-pick/2.jpg" class="img-fluid" alt="" />
+            <p class="text-muted my-2">Sports &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 13 Min</p>
+            <h5 class="fs-5 fw-light">The Science of Sleep: How to Rest Better in a 24/7 World</h5>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <img src="media/editors-pick/3.jpg" class="img-fluid" alt="" />
+            <p class="text-muted my-2">Sports &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 13 Min</p>
+            <h5 class="fs-5 fw-light">The Science of Sleep: How to Rest Better in a 24/7 World</h5>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <img src="media/editors-pick/4.jpg" class="img-fluid" alt="" />
+            <p class="text-muted my-2">Sports &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 13 Min</p>
+            <h5 class="fs-5 fw-light">The Science of Sleep: How to Rest Better in a 24/7 World</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#editors pick end-->
+
+    <!--*technology section start-->
+    <section class="container-fluid my-5 py-5">
+      <div class="container">
+        <!-- post navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-2">Technology</h2>
+          <p class="text-danger">View All <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+
+        <!-- tech post  -->
+        <div class="row row-cols-lg-3 row-cols-1 tech-post">
+          <div class="col position-relative mb-4 mb-lg-0">
+            <img src="media/technology/1.jpg" width="100%" class="img-fluid" alt="" />
+            <div class="position-absolute text-white bottom-0 p-4">
+              <p class="my-2">Sports &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 13 Min</p>
+              <h6>The Science of Sleep: How to Rest Better in a 24/7 World</h6>
+            </div>
+          </div>
+
+          <div class="col mb-4 mb-lg-0">
+            <img src="media/technology/2.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="my-2 text-secondary my-3">
+              Ethan Collins &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min
+            </p>
+            <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+          </div>
+
+          <div class="col">
+            <img src="media/technology/3.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="my-2 text-secondary my-2">Sarah Lee &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 9 Min</p>
+            <h6>Exploring the Future of Space Exploration Beyond Mars</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#technology section end-->
+
+    <!--*staff writers section start-->
+    <section class="container-fluid py-5 my-5">
+      <div class="container">
+        <!-- post navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-2">Staff Writers</h2>
+          <p class="text-danger">View All <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+
+        <!-- writters profile  -->
+        <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1">
+          <div class="col mb-4 mb-lg-0 staff-item">
+            <img src="media/staff-writers/1.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="p1">Ethan Collins</p>
+            <p class="p2">Senior Writer</p>
+          </div>
+
+          <div class="col mb-4 mb-lg-0 staff-item">
+            <img src="media/staff-writers/2.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="p1">Sofia Ramirez</p>
+            <p class="p2">Author</p>
+          </div>
+
+          <div class="col mb-4 mb-lg-0 staff-item">
+            <img src="media/staff-writers/3.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="p1">Laura Bennett</p>
+            <p class="p2">Editorialist</p>
+          </div>
+
+          <div class="col mb-4 mb-lg-0 staff-item">
+            <img src="media/staff-writers/4.jpg" width="100%" class="img-fluid" alt="" />
+            <p class="p1">Michael Brown</p>
+            <p class="p2">Content Writer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#staff writers section end-->
+
+    <!-- *articles and resources start -->
+    <section class="container-fluid py-5 my-5">
+      <div class="container">
+        <h2 class="fs-1 mb-5">Articles & Resources</h2>
+
+        <!-- articles and resources  -->
+        <div class="row">
+          <!-- left side  -->
+          <div class="col-lg-6">
+            <p class="text-muted">Technology | December 16,2024</p>
+            <h3 class="fs-3">5 Cutting Edge Technologies in Education Transforming How We Learn</h3>
+            <button class="border-0 text-danger">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <!-- right side  -->
+          <div class="col-lg-6 mt-3 mt-lg-0">
+            <img src="media/articles/1.jpg" width="100%" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <hr class="my-5" />
+
+        <!-- articles and resources  -->
+        <div class="row">
+          <!-- left side  -->
+          <div class="col-lg-6">
+            <p class="text-muted">Health | December 16,2024</p>
+            <h3 class="fs-3">How AI is Revolutionizing Healthcare: Improving Diagnostics and Patient Care</h3>
+            <button class="border-0 text-danger">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <!-- right side  -->
+          <div class="col-lg-6 mt-3 mt-lg-0">
+            <img src="media/articles/2.jpg" width="100%" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <hr class="my-5" />
+
+        <!-- articles and resources  -->
+        <div class="row">
+          <!-- left side  -->
+          <div class="col-lg-6">
+            <p class="text-muted">Business | December 16,2024</p>
+            <h3 class="fs-3">The Rise of Remote Work: The Shift To Flexible Work Environments</h3>
+            <button class="border-0 text-danger">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <!-- right side  -->
+          <div class="col-lg-6 mt-3 mt-lg-0">
+            <img src="media/articles/3.jpg" width="100%" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <hr class="my-5" />
+      </div>
+    </section>
+    <!-- #articles and resources end -->
+
+    <!--* signup section start -->
+    <section class="container-fluid signup-main-container">
+      <!-- section backgroung -->
+      <p class="background-text">* NEWS * NEWS *NEWS *NEWS *NEWS *</p>
+
+      <div class="container signup-middle-container">
+        <div class="row d-flex justify-content-between">
+          <!-- left side column-->
+          <div class="col-lg-5">
+            <h3 class="fs-3 text-white">Stay informed with our latest news and updates.</h3>
+            <p class="fs-6 text-white-50">
+              Get breaking news and curated stories delevered to your inbox every day. Be the first to know what's
+              happening around the world.
+            </p>
+          </div>
+
+          <!-- right side column  -->
+          <div class="col-lg-5 mt-3 mt-lg-0 signup">
+            <input type="text" name="signup" id="signup" placeholder="Enter your email" />
+            <input type="button" value="Sign Up" class="mt-4" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--# signup section end -->
+
+    <!--*podcast start-->
+    <section class="container-fluid py-5 my-5">
+      <div class="container">
+        <!-- post navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-2">Podcast</h2>
+          <p class="text-danger">View All <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+
+        <!-- tech post  -->
+        <div class="row row-cols-lg-3 row-cols-1">
+          <div class="col mb-4 mb-lg-0">
+            <div class="podcast">
+              <img src="media/podcast/1.jpg" width="100%" class="img-fluid" alt="" />
+              <div class="podcast-item">
+                <p class="my-2 my-3">Ethan Collins &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min</p>
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4 mb-lg-0">
+            <div class="podcast">
+              <img src="media/podcast/2.jpg" width="100%" class="img-fluid" alt="" />
+              <div class="podcast-item">
+                <p class="my-2 my-3">Ethan Collins &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min</p>
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4 mb-lg-0">
+            <div class="podcast">
+              <img src="media/podcast/3.jpg" width="100%" class="img-fluid" alt="" />
+              <div class="podcast-item">
+                <p class="my-2 my-3">Ethan Collins &nbsp; | &nbsp; <i class="fa-regular fa-clock"></i> 5 Min</p>
+                <h6>Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#podcast end-->
+
+    <!-- *footer start  -->
+    <div class="container-fluid mt-5 pt-5 bg-black text-white">
+      <div class="container">
+        <!-- footer top  -->
+        <div class="row pt-5 pb-3">
+          <div class="col-lg-4">
+            <img src="media/footer/logo.png" class="img-fluid" alt="" />
+          </div>
+
+          <div class="col-lg-8 footer-top-link mt-4 mt-lg-0">
+            <a href="#">Entertainment</a>
+            <a href="#">Sports</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Technology</a>
+            <a href="#">Health</a>
+          </div>
+        </div>
+
+        <hr class="bg-white" />
+
+        <!-- footer middle  -->
+        <div class="row my-4 py-5">
+          <!-- left side  -->
+          <div class="col-lg-6">
+            <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do wiusmod tempor dfddfh</p>
+            <div class="row mt-5">
+              <div class="col">
+                <img src="media/footer/1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col">
+                <img src="media/footer/2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col">
+                <img src="media/footer/3.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- right side  -->
+          <div class="col-lg-6 d-flex justify-content-lg-end mt-5 mt-lg-0">
+            <div class="row">
+              <!-- pages  -->
+              <div class="col">
+                <p class="mb-4 text-secondary fw-bold">Pages</p>
+                <div class="footer-page-link">
+                  <a href="#">About Us</a>
+                  <a href="#">News</a>
+                  <a href="#">Authors</a>
+                  <a href="#">Podcast</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+
+              <!-- contact  -->
+              <div class="col ms-sm-5">
+                <p class="mb-4 text-secondary fw-bold">joxnews@example.com</p>
+                <p>+1 (406) 556-0120</p>
+                <hr class="bg-white my-4" />
+                <p class="mb-1 text-secondary fw-bold">Follow Us</p>
+                <div class="fs-2">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="bg-white" />
+
+        <!-- footer bottom  -->
+        <div class="row py-3">
+          <div class="col-lg-6 d-flex flex-wrap">
+            <p class="text-white me-4">@20225 Joxnews</p>
+            <p>-Work by Onmix. Made with Webflow.</p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-lg-end">
+            <p class="text-white">Style Guide &nbsp; Change logo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #footer end -->
+  </body>
+</html>

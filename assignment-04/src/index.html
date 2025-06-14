@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thatix</title>
+    <!-- *google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *font awesome from cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- *own sites files -->
+    <script src="app.js" defer></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- *header start  -->
+    <header class="max-w-full">
+      <div class="max-w-[1140px] mx-auto flex justify-center py-4">
+        <img src="media/logo.png" alt="" class="max-w-[120px]" />
+      </div>
+      <!-- #header end  -->
+    </header>
+
+    <!-- *hero section start  -->
+    <section class="max-w-full">
+      <div class="max-w-[1140px] mx-auto hero-bg">
+        <div class="max-w-[400px] mx-auto py-16">
+          <h1 class="text-white text-[36px] sm:text-[48px] font-medium text-center leading-12">
+            Search Your Favorite Recipe
+          </h1>
+          <h4 class="text-white text-center mt-4 text-[14px] sm:text-[16px]">
+            A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking
+          </h4>
+        </div>
+      </div>
+    </section>
+    <!-- #hero section end -->
+
+    <!-- *search section start  -->
+    <!-- search  -->
+    <section class="max-w-full">
+      <div class="max-w-[1140px] mx-auto my-5">
+        <div class="w-[70%] mx-auto border border-gray-300 rounded-md flex justify-between">
+          <input type="text" placeholder="Search..." class="w-full outline-none px-3" id="searchInput" />
+          <button onclick="searchByButton()">
+            <i
+              class="fa-solid fa-magnifying-glass text-white bg-yellow-500 py-2 px-3 rounded-tr-md rounded-br-md cursor-pointer"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- #search section end -->
+
+    <!-- *food item section start  -->
+    <section class="max-w-full">
+      <div class="max-w-[1140px] mx-auto">
+        <h2 class="text-center text-[28px] sm:text-[36px]">Latest Recipes</h2>
+        <!-- items  -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-5 gap-4 mx-5" id="mealContainer">
+          <!-- item  -->
+        </div>
+      </div>
+    </section>
+    <!-- #food item section end -->
+
+    <!-- *modal section start  -->
+    <section
+      class="bg-[rgba(0,0,0,0.7)] fixed top-0 left-0 right-0 bottom-0 z-50 justify-center items-center hidden"
+      id="modalContainer"
+    >
+      <!-- modal  -->
+    </section>
+
+    <!-- #modal section end --
+
+    <!-- *footer section start  -->
+    <section class="max-w-full bg-[#3d4450] py-3 mt-8">
+      <div class="max-w-[1140px] mx-auto">
+        <div class="flex justify-between">
+          <p class="text-white">Copyright &copy; 2023 - All right reserved</p>
+          <div>
+            <i class="fa-brands fa-twitter text-white cursor-pointer"></i>
+            <i class="fa-brands fa-youtube text-white cursor-pointer"></i>
+            <i class="fa-brands fa-facebook-f text-white cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #footer section end -->
+
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+  </body>
+</html>

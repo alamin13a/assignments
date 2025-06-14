@@ -1,0 +1,110 @@
+/**shop section start*/
+.shop-container img {
+  width: 50px;
+}
+/*#shop section end*/
+
+/**cart products section start*/
+.cart-products-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 72px 100px 63px;
+  display: flex;
+  gap: 30px;
+}
+
+.cart-products {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.cart-products-heading {
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: space-between;
+}
+.cart-products-heading div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.cart-products-heading div p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.cart-product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-product-details div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.cart-product-details div img {
+  width: 108px;
+}
+.cart-product-details div:nth-child(4) p {
+  border: 1px solid var(--clr-font-secondary);
+  padding: 4px 13px;
+  border-radius: 5px;
+}
+.cart-product-details div:nth-child(2) {
+  color: var(--clr-font-secondary);
+}
+.cart-product-details div:nth-child(3) {
+  color: var(--clr-font-secondary);
+}
+
+.cart-ammount {
+  flex: 1;
+  text-align: center;
+  background-color: var(--clr-primary);
+  padding: 15px 0 80px 0;
+}
+.cart-ammount h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3.8rem;
+}
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+.cart-subtotal p:first-child {
+  font-weight: 500;
+}
+.cart-subtotal p:last-child {
+  color: var(--clr-font-secondary);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2rem auto 3rem;
+}
+.cart-total p:first-child {
+  font-weight: 500;
+}
+.cart-total p:last-child {
+  color: var(--clr-accent-primary);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.cart-ammount button {
+  font-size: 1.25rem;
+  padding: 0.9rem 3.6rem;
+  background-color: var(--clr-primary);
+  border-radius: 15px;
+}
+/*#cart products section end*/

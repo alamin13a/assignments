@@ -1,0 +1,168 @@
+/*! index.html responsive style start */
+
+/* * header responsive style */
+@media (max-width: 992px) {
+  .main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn {
+    display: block;
+    flex: 0;
+  }
+
+  .user-tools {
+    justify-content: end;
+    flex: 2;
+    gap: 1rem;
+    margin-right: -50px;
+  }
+
+  .main-nav {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 0px;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    background-color: var(--clr-accent-primary);
+    display: none;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .main-nav ul li a:hover {
+    background-color: #c89d39;
+  }
+
+  .btn:hover ~ .main-nav {
+    display: block;
+  }
+}
+
+/* header responsive style for mobile */
+@media (max-width: 590px) {
+  .main-header {
+    width: 590px;
+  }
+}
+
+/* *hero responsive style */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-content {
+    width: 514px;
+    height: 354px;
+    padding: 49px 34px 29px 31px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.0625rem;
+    color: var(--clr-accent-primary);
+    margin: 3px 0px 13px 0px;
+  }
+
+  .hero-content button {
+    padding: 20px 57px;
+    font-size: 1rem;
+  }
+}
+/* hero for mobile responsive */
+@media (max-width: 640px) {
+  .hero-section {
+    width: 640px;
+  }
+}
+
+/* *responsive product categories  */
+@media (max-width: 640px) {
+  .product-categories {
+    width: 640px;
+  }
+}
+
+/* *responsive product */
+@media (max-width: 640px) {
+  .products-container {
+    width: 640px;
+  }
+}
+
+/* *arival section responsive */
+@media (max-width: 1040px) {
+  .arrivals-container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .arrival-overview {
+    width: 60%;
+    text-align: center;
+  }
+  .arrival-slider-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .arrivals-container {
+    width: 640px;
+  }
+}
+
+/** gallery section responsive */
+@media (max-width: 640px) {
+  .gallery-container {
+    width: 640px;
+  }
+}
+
+/** footer section responsive */
+@media (max-width: 992px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-left {
+    display: flex;
+    width: 100%;
+  }
+  .footer-right {
+    display: flex;
+    width: 100%;
+  }
+  .help {
+    order: 2;
+    flex: 1;
+  }
+  .newslatter {
+    order: 1;
+    flex: 2;
+  }
+}
+@media (max-width: 640px) {
+  .footer-container {
+    width: 640px;
+  }
+}
+
+/*! index.html responsive style end */

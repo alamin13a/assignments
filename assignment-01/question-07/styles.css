@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("city-night.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-image: linear-gradient(rgba(19, 15, 64, 0.6), rgba(30, 39, 46, 0.6)) fill 1;
+}
+
+.form-container {
+  min-width: 280px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.form-container h2 {
+  margin-bottom: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+}
+
+.input-item {
+  width: 100%;
+  height: 35px;
+}
+
+.login-form input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0px 30px;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form input::placeholder {
+  color: #fff;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+.login-form input[type="submit"] {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-container h6 {
+  margin: 10px;
+}
+
+.media-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.media-container {
+  font-size: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.media-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.media-container a:active {
+  color: #999999;
+}
+
+.media-container a:visited {
+  color: #999999;
+}

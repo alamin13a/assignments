@@ -1,0 +1,137 @@
+/**shop section start*/
+
+/**checkout section start*/
+
+.checkout-container {
+  max-width: 1440px;
+  display: flex;
+  gap: 26px;
+  margin: 0 auto;
+  padding: 63px 99px 52px;
+}
+
+.billing-details {
+  max-width: 608px;
+  padding: 35px 79px 71px 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.billing-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.billing-details input,
+.billing-details select,
+.billing-details textarea {
+  height: 75px;
+  border: 1px solid var(--clr-font-secondary);
+  border-radius: 10px;
+  padding: 25px;
+  color: var(--clr-font-secondary);
+  font-size: 1rem;
+  max-width: 454px;
+}
+.billing-details div label {
+  font-weight: 500;
+}
+.billing-details select option {
+  padding-right: 250px;
+}
+
+.billing-details h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.billing-details .name {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+}
+.billing-details .name div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 46.5%;
+}
+
+.billing-product-continer {
+  flex: 1;
+  padding: 87px 37px;
+}
+
+.bil-product-info {
+  display: flex;
+  justify-content: space-between;
+}
+.bil-pro h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.bil-pro div {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+.bil-pro div p:first-child {
+  color: var(--clr-font-secondary);
+}
+.bil-pro p:nth-child(3) {
+  margin-bottom: 22px;
+}
+.bil-pro p:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.bil-subtotal {
+  text-align: right;
+}
+.bil-subtotal h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.bil-subtotal p {
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+.bil-subtotal p:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-accent-primary);
+  margin-bottom: 40px;
+}
+
+.billing-product-continer hr {
+  margin-bottom: 23px;
+}
+
+.billing-method label {
+  font-weight: 500;
+  color: var(--clr-font-secondary);
+}
+.bil-check label {
+  color: #000000;
+}
+.billing-method div p {
+  font-weight: 300;
+  color: var(--clr-font-secondary);
+}
+.billing-method div {
+  margin-bottom: 11px;
+}
+
+.billing-product-continer button {
+  font-size: 1.25rem;
+  padding: 17px 102px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 40px 105px;
+  cursor: pointer;
+}
+/*#checkout section end*/

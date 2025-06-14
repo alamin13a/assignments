@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e30;
+}
+
+.timeline {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.timeline > .container {
+  padding: 10px 30px;
+  position: relative;
+  border-left: 3px solid #24263b;
+}
+
+.container1 i {
+  background-color: #008fff;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: -14px;
+  top: 25px;
+}
+
+.container2 i {
+  background-color: #ff4c93;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: -14px;
+  top: 25px;
+}
+
+.container3 i {
+  background-color: #00c298;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: -14px;
+  top: 25px;
+}
+
+.text-box1,
+.text-box2,
+.text-box3 {
+  background-color: #27293f;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+}
+
+.text-box1 h2 {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #008fff;
+  margin-bottom: 10px;
+}
+
+.text-box1 p,
+.text-box2 p,
+.text-box3 p {
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+
+.text-box2 h2 {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #ff4c93;
+  margin-bottom: 10px;
+}
+
+.text-box3 h2 {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #00c298;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #27293f;
+  left: -7px;
+  top: 20px;
+}

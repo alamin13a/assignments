@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  /* navbar */
+  .search-box {
+    display: none;
+  }
+  /* navmenu */
+  .nav-category {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  /* hero-side-items */
+  .hero-side-item div h6 {
+    font-size: calc(1.14rem + 0.56vw);
+  }
+  .hero-side-item div p {
+    font-size: calc(0.79rem + 0.39vw);
+    margin: 0;
+  }
+  /* signup  */
+  .signup {
+    align-items: start;
+  }
+  /* footer  */
+  .footer-top-link {
+    justify-content: start;
+  }
+}

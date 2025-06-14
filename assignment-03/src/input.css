@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* body {
+  font-family: "Inter", sans-serif;
+} */
+
+@theme {
+  --color-bg-primary: #0b5d1e;
+  --color-fnt-primary: rgb(26, 26, 26);
+  --color-fnt-secondary: #666;
+  --default-font-family: "Inter", "sans-serif";
+}
+
+@layer utilities {
+  .fnt-14 {
+    font-size: clamp(12px, calc(12px + (2 * ((100vw - 640px) / 800))), 14px);
+  }
+
+  .fnt-16 {
+    font-size: clamp(14px, calc(14px + (2 * ((100vw - 640px) / 800))), 16px);
+  }
+
+  .fnt-18 {
+    font-size: clamp(16px, calc(16px + (2 * ((100vw - 640px) / 800))), 18px);
+  }
+
+  .fnt-24 {
+    font-size: clamp(20px, calc(20px + (4 * ((100vw - 640px) / 800))), 24px);
+  }
+
+  .fnt-40 {
+    font-size: clamp(28px, calc(28px + (12 * ((100vw - 640px) / 800))), 40px);
+  }
+
+  .fnt-64 {
+    /* font-size: clamp(40px, calc(40px + (24 * ((100vw - 640px) / 800))), 64px); */
+    line-height: 64px;
+    font-size: clamp(40px, calc(40px + (16 * ((100vw - 640px) / 800))), 56px);
+  }
+
+  .wrapper {
+    padding: 0px clamp(40px, calc(40px + (110 * ((100vw - 640px) / 800))), 150px);
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn-nav-gfq {
+    padding: clamp(12.8px, calc(12.8px + (3.2 * ((100vw - 1024px) / 416))), 16px)
+      clamp(19.2px, calc(19.2px + (4.8 * ((100vw - 1024px) / 416))), 24px);
+  }
+
+  .btn-general {
+    padding: clamp(9.6px, calc(9.6px + (2.4 * ((100vw - 1024px) / 416))), 12px)
+      clamp(19.2px, calc(19.2px + (4.8 * ((100vw - 1024px) / 416))), 24px);
+    border-radius: 8px;
+  }
+
+  .bg-hero {
+    /* background-image: url(./media/hero/bg.png); */
+    background: linear-gradient(to bottom right, rgba(5, 46, 22, 0.97), rgba(20, 83, 45, 0.95)),
+      url(./media/hero/bg.png);
+  }
+
+  .features-clip {
+    clip-path: path(
+      "M 10,0 L 100,0 A 10,10 0,0,1 110,10 L 110,75 A 10,10 0,0,0 120,85 L 252,85 A 10,10 0,0,1 262,95 L 262,332 A 10,10 0,0,1 252,342 L 10,342 A 10,10 0,0,1 0,332 L 0,10 A 10,10 0,0,1 10,0 Z"
+    );
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* no fixed gap */
+    justify-content: space-between;
+  }
+  .flex-container::after {
+    content: "";
+    flex: auto;
+  }
+}

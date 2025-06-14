@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #1f1f1f;
+  background-color: #fffefa;
+}
+
+/**navbar start*/
+.navbar-container {
+  border-bottom: 1px solid #dedede;
+}
+
+.navbar-custom {
+  position: relative;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.search-box {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+
+.search-box input {
+  padding-left: 25px;
+}
+
+.cart-counter {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: #cf412b;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+/**navbar end*/
+
+/**nav menu start*/
+.navmenu-container {
+  border-bottom: 1px solid #dedede;
+}
+
+.nav-category {
+  padding: 2rem 0;
+}
+
+.nav-category a {
+  margin: 0 1rem;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+/*#nav menu end*/
+
+/**hero section start*/
+.hero-author {
+  border-left: 1px solid #6d6d6d;
+}
+
+.hero-author img {
+  border-radius: 50%;
+}
+
+.hero-main p {
+  margin: 0;
+}
+
+.hero-side-item {
+  border-bottom: 1px solid #6d6d6d;
+}
+
+.hero-side-item div h6 {
+  font-size: calc(0.79rem + 0.39vw);
+}
+.hero-side-item div p {
+  font-size: calc(0.61rem + 0.3vw);
+  margin: 0;
+}
+/*#hero section end*/
+
+/**latest-news start*/
+.latest-news-post {
+  border-bottom: 1px solid #6d6d6d;
+}
+/*#latest-news end*/
+
+/* *ad section start */
+
+.ad-main-container {
+  background-color: #cf412b;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-main-container .background-text {
+  color: #000000;
+  opacity: 0.1;
+  font-size: calc(3.5rem + 3.8vw);
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: absolute;
+  white-space: nowrap;
+  display: inline-block;
+  bottom: 50%;
+  left: -7%;
+}
+
+.ad-middle-container {
+  position: relative;
+  z-index: +1;
+}
+/* #ad section end */
+
+/* *tech section start  */
+.tech-post div h6 {
+  font-size: 18px;
+}
+/* #tech section end  */
+
+/* *staff writter section start  */
+.staff-item .p1 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+.staff-item .p2 {
+  font-weight: 300;
+  margin: 0;
+}
+/* #staff writter section end  */
+
+/** signup section start */
+.signup-main-container {
+  background-color: #cf412b;
+  padding: 150px 0 100px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.signup-main-container .background-text {
+  color: #000000;
+  opacity: 0.1;
+  font-size: calc(3.5rem + 3.8vw);
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: absolute;
+  white-space: nowrap;
+  display: inline-block;
+  bottom: -75px;
+  left: -20%;
+}
+
+.signup-middle-container {
+  position: relative;
+  z-index: +1;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.signup input[type="text"] {
+  width: calc(16.63rem + 8.14vw);
+  height: calc(2.1rem + 1.03vw);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.signup input[type="button"] {
+  width: calc(16.63rem + 8.14vw);
+  height: calc(2.1rem + 1.03vw);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+/*# signup section end */
+
+/** podcast start  */
+.podcast-item h6 {
+  font-size: 18px;
+}
+
+.podcast {
+  position: relative;
+}
+
+.podcast-item {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+}
+/*# podcast end  */
+
+/** footer start  */
+.footer-top-link {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-top-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-page-link {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-page-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*# footer end  */

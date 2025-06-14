@@ -1,0 +1,347 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f6f6f6;
+}
+
+/** navbar start */
+.myNav {
+  background-color: #ffffff;
+  font-size: 14px;
+}
+.search-input {
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.search-btn {
+  margin-left: -55px;
+}
+.myForm {
+  margin-right: -20px;
+}
+/*# navbar end */
+
+/**hero section start*/
+.hero-h1 {
+  font-size: calc(1.2rem + 1.2vw);
+}
+
+.short-categories {
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  border: none;
+}
+
+.worldnews-link,
+.worldnews-link img {
+  background-color: #6641ee;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.sidebar-item {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.sidebar-item p {
+  font-size: calc(0.53rem + 0.53vw);
+}
+
+.technology-link,
+.technology-link img {
+  background-color: #e74c3c;
+}
+
+.business-link,
+.business-link img {
+  background-color: #e3c034;
+}
+
+.culture-link,
+.culture-link img {
+  background-color: #38ade8;
+}
+
+.health-link,
+.health-link img {
+  background-color: #32d255;
+}
+
+.sports-link,
+.sports-link img {
+  background-color: #e8493a;
+}
+
+/*# hero section end */
+
+/**categories section start*/
+.cate-item {
+  position: relative;
+}
+.cate-link {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*#categories section end*/
+
+/**editors pick start*/
+.editors-post {
+  border-top: 1px solid #333333;
+}
+.editors-post h6 {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+.editors-post p {
+  font-size: 18px;
+}
+/*#editors pick start*/
+
+/**latest news start*/
+.latest-news-container {
+  background-color: #f08f64;
+}
+
+.latest-news-top button {
+  border: none;
+  font-size: calc(0.7rem + 0.22vw);
+  background: none;
+}
+
+.latest-news-items .p1 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+/*#latest news end*/
+
+/**technology section start*/
+.tech-sec {
+  padding: 0;
+}
+.tech-item p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.tech-item h5 {
+  font-size: calc(0.6rem + 0.6vw);
+}
+
+.tech-banner {
+  position: relative;
+}
+.tech-banner div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+.tech-banner button {
+  background-color: #f08f64;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+.tech-banner .p1 {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 5px;
+}
+.tech-banner .p2 {
+  font-size: calc(0.9rem + 0.9vw);
+  color: #ffffff;
+}
+/*#technology section end*/
+
+/**ad section start*/
+.ad-container {
+  width: 100%;
+  height: 392px;
+  background-image: url("../media/ad/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+}
+.ad-inner {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 25px 40px;
+}
+.ad-inner h3 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: calc(0.96rem + 0.9vw);
+}
+.ad-inner p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: calc(0.56rem + 0.5vw);
+}
+.ad-inner div button {
+  height: calc(1.25rem + 1.25vw);
+  background-color: #f08f64;
+  padding: 0 30px;
+  border-radius: 30px;
+  border: navajowhite;
+  cursor: pointer;
+  font-size: calc(0.62rem + 0.3vw);
+}
+.ad-btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+/*#ad section end*/
+
+/**editorial-team start*/
+.editorial-team-member {
+  position: relative;
+}
+.editorial-team-bottom {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+}
+.editorial-team-bottom h6 {
+  margin: 0;
+  font-size: calc(0.8rem + 0.38vw);
+  text-decoration: underline;
+}
+.editorial-team-bottom p {
+  margin: 0;
+  font-weight: 300;
+  font-size: calc(0.62rem + 0.3vw);
+  text-decoration: underline;
+}
+/*#editorial-team end*/
+
+/**podcast section start*/
+.podcast-item {
+  position: relative;
+  color: #ffffff;
+}
+.podcast-item div {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0));
+}
+.podcast-item .p1 {
+  font-size: 12px;
+}
+.podcast-item .p2 {
+  font-size: calc(0.9rem + 0.4vw);
+  margin: 0;
+}
+
+/*#podcast section end*/
+
+/**footer section start*/
+.footer-top {
+  color: #ffffff;
+  padding-top: 60px;
+  margin-bottom: 100px;
+}
+.footer-heading {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(70, 70, 70);
+}
+.footer-heading p {
+  font-size: calc(0.79rem + 0.39vw);
+}
+.footer-subscribe input {
+  font-size: calc(0.61rem + 0.3vw);
+  padding: calc(0.44rem + 0.21vw) calc(0.96rem + 0.47vw);
+  border-radius: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.footer-subscribe input[type="email"] {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+.footer-subscribe input[type="button"] {
+  background-color: #f08f64;
+  border: none;
+  margin-left: 10px;
+}
+
+.footer-link h6 {
+  font-size: calc(0.7rem + 0.34vw);
+  margin-bottom: 18px;
+}
+.footer-link div a {
+  text-decoration: none;
+  font-size: calc(0.61rem + 0.3vw);
+  margin-bottom: 13px;
+  color: #d9d9d9;
+  font-weight: 300;
+}
+
+.social-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  align-items: center;
+}
+.social-item div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.social-item a {
+  color: #d9d9d9;
+  font-size: calc(0.7rem + 0.34vw);
+  text-decoration: none;
+}
+.social-item div i {
+  font-size: calc(1.53rem + 0.75vw);
+}
+.social-item i {
+  font-size: calc(0.88rem + 0.43vw);
+}
+
+.footer-privacy div {
+  display: flex;
+  gap: 15px;
+  font-weight: 300;
+}
+.footer-privacy div a {
+  color: #ffffff;
+  font-size: calc(0.61rem + 0.3vw);
+  text-decoration: none;
+}
+.footer-copiright p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: calc(0.61rem + 0.3vw);
+}
+
+/*#footer section end*/

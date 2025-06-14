@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!--*css file-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--*google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--*linking font awesome from cdnjs-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Foolish Developer</h2>
+        <form action="/action" class="login-form">
+          <div class="input-container">
+            <i class="fa-solid fa-user" style="color: #ffffff"></i>
+            <input type="email" name="email" id="email" placeholder="Email Id" class="input-item" />
+          </div>
+          <div class="input-container">
+            <i class="fa-solid fa-lock" style="color: #ffffff"></i>
+            <input type="password" name="password" id="password" placeholder="Password" class="input-item" />
+          </div>
+          <input type="submit" value="Log In" class="input-item" />
+        </form>
+        <h6>Or</h6>
+        <div class="media-wrapper">
+          <div class="media-container">
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+            <a href="https://www.facebook.com/login">Facebook</a>
+          </div>
+          <div class="media-container">
+            <i class="fa-brands fa-google" style="color: #ffffff"></i>
+            <a href="https://accounts.google.com/Login">Google</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

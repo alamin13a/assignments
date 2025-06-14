@@ -1,0 +1,13 @@
+@media (max-width: 991px) {
+  .sidebar-item p {
+    font-size: 13px;
+  }
+
+  /**ad section*/
+  .ad-btn-container {
+    justify-content: start;
+  }
+  .ad-inner {
+    padding: 15px 25px;
+  }
+}
